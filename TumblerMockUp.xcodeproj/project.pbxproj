@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		AF867FA141833A7266A4AD67 /* Pods_TumblerMockUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CECAD00C99B97B33878CBE5E /* Pods_TumblerMockUp.framework */; };
 		BE60A4B71FB78AB300337B13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60A4B61FB78AB300337B13 /* AppDelegate.swift */; };
-		BE60A4B91FB78AB300337B13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60A4B81FB78AB300337B13 /* ViewController.swift */; };
 		BE60A4BC1FB78AB300337B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE60A4BA1FB78AB300337B13 /* Main.storyboard */; };
 		BE60A4BE1FB78AB300337B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE60A4BD1FB78AB300337B13 /* Assets.xcassets */; };
 		BE60A4C11FB78AB300337B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE60A4BF1FB78AB300337B13 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		2F60A8F2C77B6F556E8E3AD2 /* Pods-TumblerMockUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblerMockUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblerMockUp/Pods-TumblerMockUp.debug.xcconfig"; sourceTree = "<group>"; };
 		BE60A4B31FB78AB300337B13 /* TumblerMockUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblerMockUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE60A4B61FB78AB300337B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE60A4B81FB78AB300337B13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE60A4BB1FB78AB300337B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE60A4BD1FB78AB300337B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE60A4C01FB78AB300337B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				BE60A4B61FB78AB300337B13 /* AppDelegate.swift */,
-				BE60A4B81FB78AB300337B13 /* ViewController.swift */,
 				BE60A4BA1FB78AB300337B13 /* Main.storyboard */,
 				BE60A4BD1FB78AB300337B13 /* Assets.xcassets */,
 				BE60A4BF1FB78AB300337B13 /* LaunchScreen.storyboard */,
@@ -211,7 +208,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE60A4B91FB78AB300337B13 /* ViewController.swift in Sources */,
 				BE60A4B71FB78AB300337B13 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
