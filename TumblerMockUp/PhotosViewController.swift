@@ -56,30 +56,47 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             // Get URL for post image
             let photo = photos[0]
             let originalSize = photo["original_size"] as! [String: Any]
+            print(originalSize)
             let urlString = originalSize["url"] as! String
             let url = URL(string: urlString)
             cell.photoImageView.af_setImage(withURL: url!)
         }
-        
-        
-        
+        cell.layoutMargins = UIEdgeInsets.zero
         return cell
     }
-	
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destination as! PhotoDetailViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)
+        
+        let post = posts[(indexPath?.row)!]
+        if let photos = post["photos"] as? [[String: Any]] {
+            // photos is NOT nil, we can use it!
+            // Get URL for post image
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            print(originalSize)
+            let urlString = originalSize["url"] as! String
+            let url = URL(string: urlString)
+            vc.photoURL = url!
+        }
+        
+        
     }
-    */
 
 }

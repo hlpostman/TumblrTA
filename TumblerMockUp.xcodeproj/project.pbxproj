@@ -14,6 +14,7 @@
 		BE60A4C11FB78AB300337B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE60A4BF1FB78AB300337B13 /* LaunchScreen.storyboard */; };
 		BE60A4CB1FB790AD00337B13 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60A4CA1FB790AD00337B13 /* PhotosViewController.swift */; };
 		BE60A4CD1FB799D300337B13 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE60A4CC1FB799D300337B13 /* PhotoCell.swift */; };
+		BEE60D031FC0C927008DE3EE /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE60D021FC0C927008DE3EE /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE60A4C21FB78AB300337B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE60A4CA1FB790AD00337B13 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		BE60A4CC1FB799D300337B13 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		BEE60D021FC0C927008DE3EE /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		CECAD00C99B97B33878CBE5E /* Pods_TumblerMockUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblerMockUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D831325A70D038130AB95141 /* Pods-TumblerMockUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblerMockUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblerMockUp/Pods-TumblerMockUp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 				BE60A4CA1FB790AD00337B13 /* PhotosViewController.swift */,
 				BE60A4B61FB78AB300337B13 /* AppDelegate.swift */,
 				BE60A4BA1FB78AB300337B13 /* Main.storyboard */,
+				BEE60D021FC0C927008DE3EE /* PhotoDetailViewController.swift */,
 				BE60A4CC1FB799D300337B13 /* PhotoCell.swift */,
 				BE60A4BD1FB78AB300337B13 /* Assets.xcassets */,
 				BE60A4BF1FB78AB300337B13 /* LaunchScreen.storyboard */,
@@ -216,6 +219,7 @@
 			files = (
 				BE60A4B71FB78AB300337B13 /* AppDelegate.swift in Sources */,
 				BE60A4CD1FB799D300337B13 /* PhotoCell.swift in Sources */,
+				BEE60D031FC0C927008DE3EE /* PhotoDetailViewController.swift in Sources */,
 				BE60A4CB1FB790AD00337B13 /* PhotosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
