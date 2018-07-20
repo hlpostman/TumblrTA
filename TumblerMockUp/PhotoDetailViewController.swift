@@ -13,6 +13,9 @@ class PhotoDetailViewController: UIViewController {
 
     @IBOutlet weak var detailPhotoImageView: UIImageView!
     var photoURL: URL?
+
+    @IBOutlet weak var captionLabel: UILabel!
+    var caption: String?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +23,13 @@ class PhotoDetailViewController: UIViewController {
         if let photoURL = photoURL {
             detailPhotoImageView.af_setImage(withURL: photoURL)
         }
+        // Remove the initial <p>" and closing "</p>
+        caption = caption!
+        caption!.removeFirst(4)
+        caption!.removeLast(5)
+        captionLabel.text! = caption!
+        print(caption!)
+        
     }
 
     override func didReceiveMemoryWarning() {

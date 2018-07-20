@@ -95,6 +95,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource, UITableView
             let url = URL(string: urlString)
             vc.photoURL = url!
         }
+        // Send caption
+        if let caption = post["caption"] as? String {
+            vc.caption = caption
+        }
         
         
     }
